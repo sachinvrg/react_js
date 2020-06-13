@@ -7,16 +7,17 @@ import Message from  './components/message'
 import Counter from  './components/counter'
 import Functionclick from  './components/functionClick'
 import Classclick from  './components/classclick'
+import Eventbind from  './components/eventbind'
 import { render } from '@testing-library/react';
 
 function App() {
   
    return (
     <div className="App">
-      {/* <Greet name='krish'>
+       <Greet name='krish'>
         <p>this is children props</p>
       </Greet>
-      <Greet name='react' >
+      {/*<Greet name='react' >
        <button>action</button>
         </Greet>
      <Welcome/> */}
@@ -24,7 +25,8 @@ function App() {
      {/* <Counter/> */}
    {/* <Greet name='krish' heroName='superman'/> */}
    {/* <Functionclick /> */}
-   <Classclick/>
+   
+   <Eventbind/>
 
     </div>
   );
