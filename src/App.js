@@ -8,6 +8,9 @@ import Counter from  './components/counter'
 import Functionclick from  './components/functionClick'
 import Classclick from  './components/classclick'
 import Eventbind from  './components/eventbind'
+import Parentcomponent from  './components/parentcomponent'
+import Usergreeting from  './components/usergreeting'
+import Namelist from  './components/namelist'
 import { render } from '@testing-library/react';
 
 function App() {
@@ -25,8 +28,11 @@ function App() {
       <Counter/> 
     <Greet name='krish' heroName='superman'/> 
    <Functionclick /> 
+   <Eventbind/>
+   <Parentcomponent/>
+   <Usergreeting/>
      */}
-   <Eventbind/> 
+  <Namelist/>
 
     </div>
   );
