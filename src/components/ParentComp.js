@@ -1,8 +1,9 @@
-import React,{PureComponent} from 'react'
+import React,{Component} from 'react'
 import Regcomp from '../Regcomp';
 import Purecomp from './purecomponent';
+import MemoComponent from './MemoComponent';
 
-class Parentcomp extends PureComponent
+class Parentcomp extends Component
 {
  constructor(props){
      super(props)
@@ -10,21 +11,22 @@ class Parentcomp extends PureComponent
          name:'balkrishna'
      }
  }
-//  componentDidMount(){  
-//      setInterval(() => {
-//          this.setState({
-//              name:'balkrishna'
-//          })
-//      }, 200);
-//  }   
+ componentDidMount(){  
+     setInterval(() => {
+         this.setState({
+             name:'balkrishna'
+         })
+     }, 2000);
+ }   
  render(){
      console.log('parentComponet render');
      
      return(
          <div>
      Parent  component{ this.state.name}
-     <Regcomp name={this.state.name}></Regcomp>
-     <Purecomp name={this.state.name}></Purecomp>
+     <MemoComponent/>
+     {/* <Regcomp name={this.state.name}></Regcomp>
+     <Purecomp name={this.state.name}></Purecomp> */}
      </div>
      )
  }

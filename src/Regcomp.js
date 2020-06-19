@@ -8,7 +8,7 @@ class Regcomp extends Component
      
      return(
          <div>
-     <h1> REGcomponent {this.state.name}</h1>
+     <h1> REGcomponent</h1>
      </div>
      )
  }

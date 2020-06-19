@@ -7,7 +7,7 @@ class purecomp extends PureComponent
      
      return(
          <div>
-     <h1>pure component {this.state.name}</h1>
+     <h1>pure component</h1>
      </div>
      )
  }

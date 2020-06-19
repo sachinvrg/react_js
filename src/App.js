@@ -21,11 +21,12 @@ import { render } from '@testing-library/react';
 import Tables from './components/table';
 import Purecomp from './components/purecomponent';
 import Parentcomp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
  return (
      <div className="App">
-       <Parentcomp/>
+       <RefsDemo/>
     {/* {   <Greet name='krish'>
        <p>this is children pr</p>
        </Greet>
@@ -49,6 +50,7 @@ function App() {
        <LifecycleA/>
        <Fragmentdemo/>
        <Tables/>
+       <Parentcomp/>
      */}
   
  
